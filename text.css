@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family: monospace;
+}
+img {
+    width:800px;
+    height:400px;
+}
+
+.slidercontainer {
+    width:800px;
+    height:400px;
+    position:relative;
+    margin:10px auto;
+}
+.slidercontainer img {
+    position:absolute;
+    opacity:0;
+    transition:opacity 1s;
+}
+.slidercontainer img.active {
+    opacity:1;
+} /*الى عليها كلاس اكتيف اعمل فيها كده*/
+.slidercontainer .slidernumber {
+   position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #d78bec73;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 17px;
+    z-index: 2;
+    border-radius: 5px;
+}
+.slidercontrols {
+    width:800px;
+    margin:auto;
+    overflow:hidden;
+    background-color: #946392e6;
+    margin-top: -10px;
+    padding: 10px 10px 5px 10px;
+}
+
+.slidercontrols .next,
+.slidercontrols .prev {
+    background-color: #543753;
+    color: #fff;
+    font-size: 13px;
+    padding: 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 10%;
+    user-select: none;
+    text-align: center;
+    transition: all .5s ease-in;
+    font-weight: bold;
+    font-style: italic;
+}
+.slidercontrols .next {
+    float:right;
+}
+.slidercontrols .prev {
+        float:left;
+}
+.slidercontrols .next:hover {
+    background-color:aqua;
+     color:#543753
+}
+.slidercontrols .prev:hover {
+    background-color:aqua;
+    color:#543753
+        
+}
+.slidercontrols .next.disabled,
+.slidercontrols .prev.disabled {
+    background-color:#63333387;
+    cursor:no-drop;
+} /*الى عليها كلاس ديسايبل اعمل فيها كده*/
+
+.slidercontrols .refear {
+    width:60%;
+    float:left;
+}
+.slidercontrols .refear ul {
+    list-style:none;
+    margin:0;
+    text-align:center;
+}
+.slidercontrols .refear ul li {
+    background-color: #e2a4df;
+    color: #fff;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 41px;
+    margin: 0 4px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.slidercontrols .refear ul li:hover {
+color: #fff;
+    background-color: #543753;
+    transition: all 1s ease;
+}
+.slidercontrols .refear ul li.active {
+    color:#fff;
+    background-color:#543753;
+}/* الى عليها كلاس اكتيف اعمل فيها كده*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
